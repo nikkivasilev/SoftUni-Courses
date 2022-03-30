@@ -16,7 +16,7 @@ def worldtour(destinations):
             start_index = int(command[1])
             end_index = int(command[2])
 
-            if 0 <= start_index < end_index <= len(destinations):
+            if 0 <= start_index <= end_index <= len(destinations):
                 destinations = destinations[:start_index] + destinations[end_index + 1:]
         elif command[0] == "Switch":
             old_string = command[1]
